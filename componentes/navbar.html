@@ -18,25 +18,60 @@
 
 <body>
 
+    <!-- Dropdown Queimaduras-->
+    <ul id="dropdown_queimaduras" class="dropdown-content - black">
+        <li><a href="/queimaduras/grausdequeimaduras.html">Graus de Queimaduras</a> </li>
+        <li><a href="/queimaduras/tratamentosmedicos.html">Tratamentos Médicos</a></li>
+        <li><a href="/queimaduras/hospitais.html">Hospitais</a></li>
+        <li><a href="/queimaduras/prevencao.html ">Prevenção</a></li>
+        <li><a href="#! ">Primeiros Socorros</a></li>
+    </ul>
+    <!--Fim Dropdown Queimaduras-->
+
+    <!-- Dropdown Projetos-->
+    <ul id="dropdown_projetos " class="dropdown-content - black ">
+        <li><a href="#! ">Fênix</a> </li>
+        <li><a href="#! ">Doutores da Beleza</a></li>
+        <li><a href="#! ">Invisíveis</a></li>
+        <li><a href="#! ">Camadas</a></li>
+        <li><a href="#! ">Diversidade</a></li>
+    </ul>
+    <!--Fim Dropdown Projetos-->
+    <!--Menu Expansivo-->
+    <ul id="dropdown_menu_expansivo " class="dropdown-content - black ">
+        <li><a href="#! ">Fênix</a> </li>
+        <li><a href="#! ">Doutores da Beleza</a></li>
+        <li><a href="#! ">Invisíveis</a></li>
+        <li><a href="#! ">Camadas</a></li>
+        <li><a href="#! ">Diversidade</a></li>
+    </ul>
+    <!--Fim Menu Expansivo-->
     <!--Navbar-->
     <nav>
-        <div class=" nav-wrapper - black " id="nav-placeholder">
+        <div class=" nav-wrapper - black " id="nav-placeholder ">
             <a href="home.html " class="brand-logo ">ANAVIQ</a>
             <div class="col s12 m6 ">
                 <ul id="nav-mobile " class="right hide-on-med-and-down ">
                     <li><a class="blue-text " href="home.html ">Home</a></li>
-                    <li><a class="blue-text " href="queimaduras.html ">Queimaduras</a></li>
+                    <!-- Dropdown queimaduras -->
+                    <li><a class="dropdown-trigger blue-text " href="#! " data-target="dropdown_queimaduras ">Queimaduras<i class="material-icons right ">arrow_drop_down</i></a></li>
                     <li><a class="blue-text " href="quemsomos.html ">Quem Somos</a></li>
-                    <li><a class="blue-text " href="projetos.html ">Projetos</a></li>
+                    <!--Dropdown projetos-->
+                    <li><a class="dropdown-trigger blue-text " href="#! " data-target="dropdown_projetos ">Projetos<i class="material-icons right ">arrow_drop_down</i></a></li>
                     <li><a class="blue-text " href="apoie.html ">Apoie</a></li>
                     <li><a class="blue-text " href="criancas.html ">Crianças</a></li>
+
                 </ul>
             </div>
 
         </div>
     </nav>
     <!--End Navbar-->
-
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger ").dropdown();
+        });
+    </script>
 </body>
 
 </html>

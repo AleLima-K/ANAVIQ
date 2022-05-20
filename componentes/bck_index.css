@@ -1,0 +1,23 @@
+#foguinho_1 {
+    position: absolute;
+    z-index: -1;
+    top: -10vh;
+    transform: rotate(37deg);
+    width: 40vh;
+    height: 100vh;
+}
+
+#sec_sobre {
+    position: absolute;
+    top: 90vh;
+}
+
+#sec_projetos {
+    position: absolute;
+    top: 120vh;
+}
+
+#sec_dados {
+    position: absolute;
+    top: 120vh;
+}

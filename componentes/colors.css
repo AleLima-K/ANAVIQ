@@ -9,6 +9,8 @@ hr {
     color: #E0340B;
 }
 
-p {
+p,
+span {
     color: #ffff;
+    font-size: large;
 }
